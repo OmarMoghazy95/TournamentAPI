@@ -1,4 +1,4 @@
-﻿namespace Tournament.Api.Application.Dtos
+﻿namespace Tournament.Api.Application.Dtos.Tournaments
 {
     public record CreateTournamentDto
     {

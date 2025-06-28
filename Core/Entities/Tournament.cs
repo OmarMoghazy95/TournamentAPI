@@ -7,5 +7,6 @@
 
         public virtual ICollection<TournamentMatch> Matches { get; set; } = new HashSet<TournamentMatch>();
         public virtual ICollection<TournamentTeam> Teams { get; set; } = new HashSet<TournamentTeam>();
+
     }
 }
