@@ -23,9 +23,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Application\Dtos\" />
-    <Folder Include="Application\Services\" />
-    <Folder Include="Controllers\" />
     <Folder Include="Presentation\" />
   </ItemGroup>
 

@@ -2,7 +2,7 @@
 
 namespace Tournament.Api.Core.Entities
 {
-    internal class TournamentMatch : BaseEntity
+    public class TournamentMatch : BaseEntity
     {
         public Guid TournamentId { get; set; }
         public Guid? TeamAId { get; set; }
