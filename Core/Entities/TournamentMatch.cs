@@ -4,6 +4,7 @@ namespace Tournament.Api.Core.Entities
 {
     internal class TournamentMatch : BaseEntity
     {
+        public Guid TournamentId { get; set; }
         public Guid? TeamAId { get; set; }
         public Guid? TeamBId { get; set; }
 
@@ -17,11 +18,14 @@ namespace Tournament.Api.Core.Entities
         public virtual TournamentMatch ParentMatchA { get; set; }
         public virtual TournamentMatch ParentMatchB { get; set; }
 
-        public virtual TournamentMatch ChildMatch { get; set; }
+        public virtual TournamentMatch ChildMatchA { get; set; }
+        public virtual TournamentMatch ChildMatchB { get; set; }
 
 
         public virtual TournamentTeam TeamA { get; set; }
         public virtual TournamentTeam TeamB { get; set; }
         public virtual TournamentTeam Winner { get; set; }
+
+        public virtual Tournament Tournament { get; set; }
     }
 }

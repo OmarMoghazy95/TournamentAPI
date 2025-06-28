@@ -6,5 +6,11 @@
         public string TeamName { get; set; }
 
         public virtual Tournament Tournament { get; set; }
+
+        public virtual ICollection<TournamentMatch> MatchesA { get; set; }
+        public virtual ICollection<TournamentMatch> MatchesB { get; set; }
+        public virtual ICollection<TournamentMatch> MatchesWon { get; set; }
+
+
     }
 }

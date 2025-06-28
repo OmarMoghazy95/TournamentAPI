@@ -11,7 +11,7 @@ public static partial class IServiceCollectionExtensions
     {
         Batteries.Init();
         services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlite("Data Source=Tournament.db"));
+        options.UseSqlite("Data Source=Tournament.db"));
 
     }
 }

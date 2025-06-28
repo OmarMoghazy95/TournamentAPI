@@ -1,6 +1,5 @@
 using Tournament.Api.Infrastructure.Extensions;
 using Tournament.Api.Ioc;
-using Tournament.Api.Presentation;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -30,6 +29,6 @@ app.MapControllers();
 
 await app.InitializeDatabase();
 
-app.MapEmployeeEndpoints();
+//app.MapEmployeeEndpoints();
 
 await app.RunAsync();
